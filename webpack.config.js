@@ -11,9 +11,9 @@ module.exports = {
 
   // Output file
   output: {
-    filename: './js/bundle.js',
-    path: path.resolve(__dirname, 'dist') // Add output path
-  },
+  filename: 'js/bundle.js',
+    path: path.resolve(__dirname, 'dist')
+},
 
   // Source maps for easier debugging
   devtool: "source-map",
@@ -81,14 +81,12 @@ module.exports = {
     }),
 
     // Copy images
-    new CopyWebpackPlugin({
-      patterns: [
-        {
-          from: './src/img',
-          to: 'img',
-        },
-      ]
-    })
+   new CopyWebpackPlugin({
+  patterns: [
+    { from: './src/img', to: 'img' },
+    { from: './src/assets/icons', to: 'assets/icons' }
+  ]
+})
   ],
   devServer: {
     static: path.join(__dirname, 'dist'), // Updated from contentBase
