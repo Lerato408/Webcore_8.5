@@ -1,4 +1,4 @@
-# Webpack Static Site Starter Kit
+# Webcore_8.5 # Webpack Static Site Starter Kit
 
 ## Project Requirements
 
