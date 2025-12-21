@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
  
   const menuBtn = document.querySelector('.header__menu-btn');
   const aside = document.querySelector('.aside');
-  const asideCloseBtn = document.querySelector('.aside__close-btn');
+  const asideCloseBtn = document.querySelector('.aside-header__menu-btn');
 
   if (!menuBtn || !aside) return;
 
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // =========================
   const openAside = () => {
     aside.classList.add('aside--open');
-    document.body.style.overflow = 'hidden';
+    document.body.style.overflow = '';
   };
 
   const closeAside = () => {

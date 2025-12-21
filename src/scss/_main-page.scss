@@ -1,7 +1,7 @@
 
 
 .main-page {
-   flex: 1;
+  flex: 1;
   min-width: 0;
 
   &__header {
@@ -16,7 +16,7 @@
 .header {
 display: flex;
 align-items: center;
-padding: 20px;
+padding: 10px;
 background: #ffffff;
 border-bottom: 1px solid #b8ffec;
 position: sticky;
@@ -74,7 +74,7 @@ z-index: 100;
   }
 
   &__logo--img {
-    max-height: 32px;
+    max-height: 50px;
   }
 
   &__divider {
@@ -213,6 +213,7 @@ z-index: 100;
   &__more-text--extra {
     display: flex;
     align-items: center;
+    font-size: 1rem;
     gap: 8px;
     cursor: pointer;
     margin-top: 10px;
