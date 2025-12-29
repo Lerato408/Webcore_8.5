@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // =========================
   const openAside = () => {
     aside.classList.add('aside--open');
-    document.body.style.overflow = '';
+    document.body.style.overflow = 'hidden';
   };
 
   const closeAside = () => {

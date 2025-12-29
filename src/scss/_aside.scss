@@ -1,7 +1,8 @@
 
 
 .aside {
-  position: relative;
+  font-family: "TTLakes",sans-serif;
+  position: absolute;
   left: 0;
   top: 0;
   width: 280px;
@@ -9,7 +10,6 @@
   background-color: #ffffff;
   color: #000;
   box-sizing: border-box;
-  box-shadow: 10px 10px 10px gray;
   flex-grow: 0;
   flex-shrink: 0;
   overflow-x: hidden;
@@ -109,7 +109,7 @@
       }
 
       &--active {
-      font-family: TTLakes,sans-serif;
+      font-family: "TTLakes",sans-serif;
       font-size: 15px;
       color: gray;
       }
@@ -177,20 +177,34 @@
     }
   }
 
+
+
 @media (min-width:320px) and (max-width: 1440px) {
+  .layout {
+    display: block;
+  }
+
   .aside {
-    position: relative;
+    position: fixed;
     top: 0;
     left: 0;
+    width: 250px;
     height: 100vh;
     transform: translateX(-100%);
     transition: transform 0.3s ease;
+    z-index: 1000;
   }
 
-  .aside.aside--open {
+  .aside--open {
     transform: translateX(0);
   }
+
+  .main-page {
+   margin-left: 250px;
+   min-height: 100vh;
+  }
 }
+
 
 
 @media (min-width: 1120px) {

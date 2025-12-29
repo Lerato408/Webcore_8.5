@@ -1,6 +1,9 @@
+@import 'variables';
 
-$bgColor: #c5c5c6; 
-$text: #0c0c0c; 
+* {
+  font-family: 'TTLakes', sans-serif;
+  box-sizing: border-box;
+}
 
 @font-face { font-family: "TTLakes";
    src: url('../assets/fonts/TTLakes-Regular.ttf') format('truetype'), 
@@ -15,10 +18,10 @@ $text: #0c0c0c;
   src: url('../assets/fonts/TTLakes-Bold.ttf') format('truetype'),;
    font-weight: 700; font-style: normal; } 
    
-.body { 
+body { 
   padding: 0; 
   margin: 0; 
-  font-family: TTLakes, sans-serif;
+  font-family: "TTLakes", sans-serif;
   color: $text; 
 }
 
@@ -31,7 +34,7 @@ $text: #0c0c0c;
 
 /* ASIDE */
 .aside {
-  width: 320px;
+  width: 250px;
   flex-shrink: 0;
   background: #fff;
   border-right: 1px solid #eaeaea;
@@ -45,5 +48,7 @@ $text: #0c0c0c;
 
 @import 'aside';
 @import 'main-page';
+@import 'brand-swiper';
+@import 'variables';
 
 
