@@ -6,153 +6,188 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Web-core final</title>
   <script defer="defer" src="js/bundle.js"></script><link href="style.css" rel="stylesheet"></head>
-  <body>
-    <div class="layout">
-      <aside class="aside">
-        <header class="aside-header">
-          <div class="aside-header__content">
-            <div class="aside-header__left">
-              <div class="aside-header__menu-btn">
-                <img src="assets/icons/BurgerIcon.svg" alt="Menu Button">
+  <body class="app__container">
+      <div class="layout">
+        <aside class="aside">
+          <header class="aside-header">
+            <div class="aside-header__content">
+              <div class="aside-header__left">
+                <button class="aside-header__menu-btn" type="button">
+                  <img src="assets/icons/BurgerIcon.svg" alt="menu">
+                </button>
+                <div class="aside-header__right">
+                  <img src="assets/icons/Logo.svg" alt="Cps Logo">
+                </div>
               </div>
               <div class="aside-header__right">
-                <img src="assets/icons/Logo.svg" alt="Cps Logo">
+                <div class="aside-header__search">
+                  <img src="assets/icons/SearchIcon.svg" alt="Search Icon">
+                </div>
               </div>
             </div>
-            <div class="aside-header__right">
-              <div class="aside-header__search">
-                <img src="assets/icons/SearchIcon.svg" alt="Search Icon">
-              </div>
-            </div>
-          </div>
-        </header>
+          </header>
 
-        <section class="aside-main">
-          <div class="aside-main__wrapper">
-            <ul class="aside-main__menu-list">
-              <li class="aside-main__menu-item aside-main__menu-item--active">
-                <span class="aside-main__left-border"></span>
-                Equipment repair
-              </li>
-              <li class="aside-main__menu-item">Service and solutions</li>
-              <li class="aside-main__menu-item">Corporate clients</li>
-              <li class="aside-main__menu-item">Equipment sellers</li>
-              <li class="aside-main__menu-item">Partners</li>
-              <li class="aside-main__menu-item">Manufacturers</li>
-              <li class="aside-main__menu-item">Our service centres</li>
-              <li class="aside-main__menu-item">Contacts</li>
-            </ul>
-          </div>
-        </section>
-
-        <footer class="aside-footer">
-          <div class="aside-footer__top">
-            <div class="aside-footer__icons">
-              <img src="assets/icons/CallIcon.svg" alt="call-btn">
-              <img src="assets/icons/ChatIcon.svg" alt="chat-btn">
-              <img src="assets/icons/ProfileIcon.svg" alt="profile-btn">
+          <section class="aside-main">
+            <div class="aside-main__wrapper">
+              <ul class="aside-main__menu-list">
+                <li class="aside-main__menu-item aside-main__menu-item--active">
+                  <span class="aside-main__left-border"></span>
+                  Equipment repair
+                </li>
+                <li class="aside-main__menu-item">Service and solutions</li>
+                <li class="aside-main__menu-item">Corporate clients</li>
+                <li class="aside-main__menu-item">Equipment sellers</li>
+                <li class="aside-main__menu-item">Partners</li>
+                <li class="aside-main__menu-item">Manufacturers</li>
+                <li class="aside-main__menu-item">Our service centres</li>
+                <li class="aside-main__menu-item">Contacts</li>
+              </ul>
             </div>
-
-            <div class="aside-footer__info">
-              <p><a href="#">mail@cps.com</a></p>
-              <p><a href="#">8 800 890 8900</a></p>
-            </div>
-          </div>
-          <div class="aside-footer__bottom">
-            <p class="aside-lang">
-              <span class="aside-lang__item">RU</span>
-              <span class="aside-lang__item">EN</span>
-              <span class="aside-lang__item">CN</span>
-            </p>
-          </div>
-        </footer>
-      </aside>
-      <main class="main-page">
-        <header class="main-page__header header">
-          <div class="header__content">
-            <div class="header__group header__group--left">
-              <div class="header__menu-btn">
-                <img src="assets/icons/MenuIcon.svg" alt="menu icon" class="header__menu--img">
-              </div>
-              <span class="header__divider">
-                <img src="assets/img/HeaderDivider.svg" class="header__divider-img" alt="divider">
-              </span>
-              <div class="header__logo">
-                <img src="assets/img/LogoGroup.svg" alt="CPS Service Center Sign" class="header__logo--img">
-              </div>
-            </div>
-            <div class="header__group header__group--right">
-              <div class="header__actions-left">
-                <img src="assets/icons/ChatIcon.svg" class="header__icon-img" alt="chat">
-                <img src="assets/icons/ProfileIcon.svg" class="header__icon-img" alt="profile">
-                <img src="assets/icons/CallIcon.svg" class="header__icon-img" alt="call">
-              </div>
-              <span class="header__divider">
-                <img src="assets/img/HeaderDivider.svg" class="header__divider-img" alt="divider">
-              </span>
-              <div class="header__actions-right">
-                <img src="assets/icons/RepairIcon.svg" class="header__icon-img" alt="repair">
-                <img src="assets/icons/StatusIcon.svg" class="header__icon-img" alt="status">
-              </div>
-            </div>
-          </div>
-        </header>
-        <div class="main-page__content content">
-          <section class="content__info">
-            <div class="content__title-group">
-               <span class="content__title-border-left"></span>
-                <span class="content__title">Services and Support</span>
-              <div class="content__action-icons">
-                <div class="content__action">Submit a request<img src="assets/icons/RepairIcon.svg" alt="repair icon" class="header__icon--img"></div>
-                <div class="content__action">Repair status<img src="assets/icons/StatusIcon.svg" alt="repair icon" class="header__icon--img"></div>
-              </div>
-            </div>
-            <ul class="content__slider-track inline-snaps">
-              <li><nav class="content__slider-item selected">Devices We Repair</nav></li>
-              <li><nav class="content__slider-item">Brands We Repair</nav></li>
-              <li><nav class="content__slider-item">Other Services</nav></li>
-              <li><nav class="content__slider-item">Accessories</nav></li>
-              <li><nav class="content__slider-item">Book a Repair</nav></li>
-              <li><nav class="content__slider-item">Addresses of service centers</nav></li>
-              <li><nav class="content__slider-item">Special prices</nav></li>
-              <li><nav class="content__slider-item">Reviews</nav></li>
-            </ul>
           </section>
-          <div class="content__columns">
-            <div class="content__text-wrapper">
-              <div class="content__text-block">
-                <p class="content__text">
-                  We are an authorized service for Dell equipment repairs.<br>Only
-                  with us can you repair your Dell laptop with the official
-                  manufacturer's warranty.
-                </p>
-                <p class="content__more-text">
-                  We have been successfully operating since 1992 and have earned a
-                  reputation as a reliable partner,
-                </p>
-                <p class="content__more-text--extra">
-                  as evidenced by our large number of loyal customers. We take
-                  pride in the fact that clients come to us through
-                  recommendations and, in turn, recommend us to their family and
-                  friends.
-                </p>
-                <label class="content__read-more">
-                  <img src="assets/icons/ExpandIcon.svg" alt="expand icon" class="content__read-more--img">
-                  Read more
-                </label>
+
+          <footer class="aside-footer">
+            <div class="aside-footer__top">
+              <div class="aside-footer__icons">
+                <img src="assets/icons/CallIcon.svg" alt="call-btn">
+                <img src="assets/icons/ChatIcon.svg" alt="chat-btn">
+                <img src="assets/icons/ProfileIcon.svg" alt="profile-btn">
+              </div>
+
+              <div class="aside-footer__info">
+                <p><a href="#">mail@cps.com</a></p>
+                <p><a href="#">8 800 890 8900</a></p>
               </div>
             </div>
-            <div class="content__image-wrapper">
-              <section class="content__image-block">
-                <figure class="content__image">
-                  <img src="assets/img/PictureContainer.svg" alt="Main image" class="content__image">
-                </figure>
-              </section>
+            <div class="aside-footer__bottom">
+              <p class="aside-lang">
+                <span class="aside-lang__item">RU</span>
+                <span class="aside-lang__item">EN</span>
+                <span class="aside-lang__item">CN</span>
+              </p>
+            </div>
+          </footer>
+        </aside>
+        <main class="main-page">
+          <header class="main-page__header header">
+            <div class="header__content">
+              <div class="header__group header__group--left">
+                <button class="header__menu-btn" type="button">
+                <img src="assets/icons/MenuIcon.svg" alt="menu">
+                </button>
+                <span class="header__divider">
+                  <img src="assets/img/HeaderDivider.svg" class="header__divider-img" alt="divider">
+                </span>
+                <div class="header__logo">
+                  <img src="assets/img/LogoGroup.svg" alt="CPS Service Center Sign" class="header__logo--img">
+                </div>
+              </div>
+              <div class="header__group header__group--right">
+                <div class="header__actions-left">
+                  <img src="assets/icons/ChatIcon.svg" class="header__icon-img" alt="chat">
+                  <img src="assets/icons/ProfileIcon.svg" class="header__icon-img" alt="profile">
+                  <img src="assets/icons/CallIcon.svg" class="header__icon-img" alt="call">
+                </div>
+                <span class="header__divider">
+                  <img src="assets/img/HeaderDivider.svg" class="header__divider-img" alt="divider">
+                </span>
+                <div class="header__actions-right">
+                  <img src="assets/icons/RepairIcon.svg" class="header__icon-img" alt="repair">
+                  <img src="assets/icons/StatusIcon.svg" class="header__icon-img" alt="status">
+                </div>
+              </div>
+            </div>
+          </header>
+          <div class="main-page__content content">
+            <section class="content__info">
+              <div class="content__title-group">
+                <span class="content__title-border-left"></span>
+                  <span class="content__title">Services and Support</span>
+                <div class="content__action-icons">
+                  <div class="content__action">Submit a request<img src="assets/icons/RepairIcon.svg" alt="repair icon" class="header__icon--img"></div>
+                  <div class="content__action">Repair status<img src="assets/icons/StatusIcon.svg" alt="repair icon" class="header__icon--img"></div>
+                </div>
+              </div>
+              <nav class="content__nav">
+                <ul class="content__slider-track inline-snaps">
+                  <li>
+                    <button class="content__slider-item selected" type="button">
+                      Devices We Repair
+                    </button>
+                  </li>
+                  <li>
+                    <button class="content__slider-item" type="button">
+                      Brands We Repair
+                    </button>
+                  </li>
+                  <li>
+                    <button class="content__slider-item" type="button">
+                      Other Services
+                    </button>
+                  </li>
+                  <li>
+                    <button class="content__slider-item" type="button">
+                      Accessories
+                    </button>
+                  </li>
+                  <li>
+                    <button class="content__slider-item" type="button">
+                      Book a Repair
+                    </button>
+                  </li>
+                  <li>
+                    <button class="content__slider-item" type="button">
+                      Addresses of service centers
+                    </button>
+                  </li>
+                  <li>
+                    <button class="content__slider-item" type="button">
+                      Special prices
+                    </button>
+                  </li>
+                  <li>
+                    <button class="content__slider-item" type="button">
+                      Reviews
+                    </button>
+                  </li>
+                </ul>
+              </nav>
+
+            </section>
+            <div class="content__columns">
+              <div class="content__text-wrapper">
+                <div class="content__text-block">
+                  <p class="content__text">
+                    We are an authorized service for Dell equipment repairs.<br>Only
+                    with us can you repair your Dell laptop with the official
+                    manufacturer's warranty.
+                  </p>
+                  <p class="content__more-text">
+                    We have been successfully operating since 1992 and have earned a
+                    reputation as a reliable partner,
+                  </p>
+                  <p class="content__more-text--extra">
+                    as evidenced by our large number of loyal customers. We take
+                    pride in the fact that clients come to us through
+                    recommendations and, in turn, recommend us to their family and
+                    friends.
+                  </p>
+                  <label class="content__read-more">
+                    <img src="assets/icons/ExpandIcon.svg" alt="expand icon" class="content__read-more--img">
+                    Read more
+                  </label>
+                </div>
+              </div>
+              <div class="content__image-wrapper">
+                <section class="content__image-block">
+                  <figure class="content__image">
+                    <img src="assets/img/PictureContainer.svg" alt="Main image" class="content__image">
+                  </figure>
+                </section>
+              </div>
             </div>
           </div>
-        </div>
-      </main>
-    </div>
+        </main>
+      </div>
   </body>
 </html>
 
