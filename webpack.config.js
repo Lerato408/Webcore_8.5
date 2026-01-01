@@ -10,7 +10,9 @@ module.exports = {
   // Output file
   output: {
     filename: 'js/bundle.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist'),
+    publicPath: '/Webcore_8.5/',
+    clean: true
   },
 
   // Source maps for easier debugging
