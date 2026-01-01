@@ -6,30 +6,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (!aside) return;
 
-  const desktopQuery = window.matchMedia("(min-width: 1120px)");
+const desktopQuery = window.matchMedia("(min-width: 1120px)");
 
-  const openAside = () => {
-    aside.classList.add("aside--open");
-    document.body.style.overflow = "";
-  };
+const openAside = () => {
+  aside.classList.add("aside--open");
+};
 
-  const closeAside = () => {
-    aside.classList.remove("aside--open");
-    document.body.style.overflow = "";
-  };
+const closeAside = () => {
+  aside.classList.remove("aside--open");
+};
 
-  const toggleAside = () => {
-    aside.classList.contains("aside--open") ? closeAside() : openAside();
-  };
+const toggleAside = () => {
+  aside.classList.toggle("aside--open");
+};
 
-  // Mobile only toggles
-  asideBurger?.addEventListener("click", () => {
-    if (!desktopQuery.matches) toggleAside();
-  });
-
-  mainBurger?.addEventListener("click", () => {
-    if (!desktopQuery.matches) toggleAside();
-  });
+ asideBurger?.addEventListener("click", toggleAside);
+ mainBurger?.addEventListener("click", toggleAside);
 
   // Active state
   menuItems.forEach((item) => {

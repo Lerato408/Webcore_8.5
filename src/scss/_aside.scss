@@ -5,19 +5,26 @@
   position: absolute;
   left: 0;
   top: 0;
-  width: 280px;
-  height: 100%;
+  width: 250px;
   background-color: #ffffff;
   color: #000;
   box-sizing: border-box;
   flex-grow: 0;
   flex-shrink: 0;
   overflow-x: hidden;
+  transform: translateX(-100%);
   transition: transform 0.3s ease;
 
-  &--hidden {
-    transform: translateX(-100%);
+  &--open {
+    transform: translateX(0);
   }
+}
+
+.aside-header__menu-btn,
+.header__menu-btn {
+  border: none;
+  background: #ff4076;
+  cursor: pointer;
 }
 
 
@@ -61,9 +68,6 @@
     cursor: pointer;
     transition: background 0.3s ease;
    
-
-
-
       &:hover {
         background: #e00c4c;
       }
@@ -177,15 +181,20 @@
     }
   }
 
-
-
-@media (min-width:320px) and (max-width: 1440px) {
-  .layout {
-    display: block;
+@media (min-width:320px){
+  .aside {
+   width: 400px;
   }
+  .aside--open {
+    transform: translateX(0);
+  }
+}
+
+@media (min-width:769px){
+ 
 
   .aside {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 250px;
@@ -200,7 +209,6 @@
   }
 
   .main-page {
-   margin-left: 250px;
    min-height: 100vh;
   }
 }
@@ -209,6 +217,8 @@
 
 @media (min-width: 1120px) {
   .aside {
+     position: static;
+    height: auto;
     transform: none;
   }
 }
