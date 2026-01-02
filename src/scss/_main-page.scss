@@ -249,7 +249,7 @@
   }
   }
 
-  
+
 
 @media (min-width: 320px) {
   .content__action-icons {
@@ -283,6 +283,12 @@
     display: flex;
     flex-wrap: wrap;
     overflow-x: visible;
+    gap: 15px;
+    padding-inline-start: 10px;
+  }
+
+  .content__columns {
+    flex-direction: row;
   }
 
 }
