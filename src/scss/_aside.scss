@@ -184,6 +184,7 @@
 @media (min-width:320px){
   .aside {
    width: 400px;
+   height: auto;
   }
   .aside--open {
     transform: translateX(0);
