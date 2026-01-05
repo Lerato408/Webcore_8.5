@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', () => {
  
   const menuBtn = document.querySelector('.header__menu-btn');
@@ -53,4 +54,26 @@ document.addEventListener('DOMContentLoaded', () => {
       document.body.style.overflow = '';
     }
   });
+    const btn = document.querySelector('.content__read-more');
+  const textBlock = document.querySelector('.content__text-block');
+  const label = document.querySelector('.content__read-more-label');
+  const arrow = document.querySelector('.content__read-more--img');
+
+  if (!btn || !textBlock) return;
+
+  btn.addEventListener('click', () => {
+    const expanded = textBlock.classList.toggle(
+      'content__text-block--expanded'
+    );
+
+    if (label) {
+      label.textContent = expanded ? 'Show less' : 'Read more';
+    }
+
+    if (arrow) {
+      arrow.classList.toggle('content__read-more--rotated', expanded);
+    }
+  });
 });
+
+

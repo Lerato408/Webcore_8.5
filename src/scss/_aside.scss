@@ -183,7 +183,7 @@
 
 @media (min-width:320px){
   .aside {
-   width: 400px;
+   width: 320px;
    height: auto;
   }
   .aside--open {
@@ -218,8 +218,12 @@
 
 @media (min-width: 1120px) {
   .aside {
-     position: static;
+    position: static;
     height: auto;
     transform: none;
+  }
+ 
+  .aside-header__menu-btn {
+    display: none;
   }
 }

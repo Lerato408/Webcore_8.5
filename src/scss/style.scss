@@ -4,6 +4,12 @@
   font-family: 'TTLakes', sans-serif;
   box-sizing: border-box;
 }
+body { 
+  padding: 0; 
+  margin: 0; 
+  font-family: "TTLakes", sans-serif;
+  color: black; 
+}
 
 @font-face { font-family: "TTLakes";
    src: url('../assets/fonts/TTLakes-Regular.ttf') format('truetype'), 
@@ -18,12 +24,7 @@
   src: url('../assets/fonts/TTLakes-Bold.ttf') format('truetype'),;
    font-weight: 700; font-style: normal; } 
    
-body { 
-  padding: 0; 
-  margin: 0; 
-  font-family: "TTLakes", sans-serif;
-  color: black; 
-}
+
 
 
 .app__container {
@@ -75,7 +76,7 @@ body {
 
 @import 'aside';
 @import 'main-page';
-@import 'brand-swiper';
+/* add brand-swiper */
 @import 'variables';
 
 

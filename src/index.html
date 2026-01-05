@@ -72,7 +72,7 @@
             <div class="header__content">
               <div class="header__group header__group--left">
                 <button class="header__menu-btn" type="button">
-                <img src="assets/icons/MenuIcon.svg" alt="menu" />
+                 <img src="assets/icons/MenuIcon.svg" alt="menu" />
                 </button>
                 <span class="header__divider">
                   <img src="assets/img/HeaderDivider.svg" class="header__divider-img"alt="divider"/>
@@ -100,8 +100,10 @@
           <div class="main-page__content content">
             <section class="content__info">
               <div class="content__title-group">
-                <span class="content__title-border-left"></span>
+                <div class="content__title-wrapper">
+                  <span class="content__title-border-left"></span>
                   <span class="content__title">Services and Support</span>
+                </div>
                 <div class="content__action-icons">
                   <div class="content__action">Submit a request<img src="assets/icons/RepairIcon.svg" alt="repair icon" class="header__icon--img" /></div>
                   <div class="content__action">Repair status<img src="assets/icons/StatusIcon.svg" alt="repair icon" class="header__icon--img"/></div>
@@ -151,7 +153,6 @@
                   </li>
                 </ul>
               </nav>
-
             </section>
             <div class="content__columns">
               <div class="content__text-wrapper">
@@ -171,10 +172,10 @@
                     recommendations and, in turn, recommend us to their family and
                     friends.
                   </p>
-                  <label class="content__read-more">
-                    <img src="assets/icons/ExpandIcon.svg" alt="expand icon"  class="content__read-more--img"/>
-                    Read more
-                  </label>
+                  <button class="content__read-more" id="readMoreBtn" type="button">
+                    <img src="assets/icons/ExpandIcon.svg" alt="expand icon"class="content__arrow--img" />
+                    <span class="label">Read more</span>
+                  </button>
                 </div>
               </div>
               <div class="content__image-wrapper">
