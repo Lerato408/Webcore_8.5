@@ -1,44 +1,188 @@
+/* =====================
+   RESET
+===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
- font-family: 'TTLakes', sans-serif;
- box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  padding: 40px 20px;
 }
 
+/* =====================
+   CONTAINER
+===================== */
 .brand__container {
- outline: 5px solid lime;
-
- margin: 0 auto;
- background: rgb(246, 244, 244);
- padding-bottom: 20px;
- box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+  margin: 0 auto;
+  background: rgb(246, 244, 244);
+  padding-bottom: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
 }
 
-.content__section-header{
-  font-family: "TTLakes", sans-serif;
+/* =====================
+   HEADER
+===================== */
+.content__section-header {
+  font-family: Roboto, sans-serif;
   display: flex;
-  background: linear-gradient(to right,rgb(246, 244, 244) 40%,white 60%);
+  align-items: center;
+  background: linear-gradient(
+    to right,
+    rgb(246, 244, 244) 40%,
+    white 60%
+  );
   color: #868484;
-  padding-top: 30px;
-  padding-left: 10px;;
+  padding: 30px 0 0 10px;
   min-height: 70px;
-  border-top: #85fffb 1px solid;
+  border-top: 1px solid #85fffb;
   margin-bottom: 10px;
-
 }
 
-.swiper__container {
+/* =====================
+   SWIPER CONTAINER
+===================== */
+.brands__slider {
+  position: relative;
+  width: 95%;
+  margin-bottom: 10px;
+}
+
+/* =====================
+   SWIPER CORE
+===================== */
+.swiper-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.swiper-slide {
+  width: 240px;
+  height: 74px;
+  background: white;
+  border: 2px solid lightgrey;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* =====================
+   BRAND CARD
+===================== */
+.brand-card {
   width: 100%;
-  padding-top: 20px;
-  padding-bottom: 40px;
+  height: 100%;
+
+  &__content {
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    max-height: 40px;
+    max-width: 140px;
+  }
+
+  &__button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__icon {
+    width: 16px;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
 }
 
+/* =====================
+   PAGINATION
+===================== */
+.swiper-pagination {
+  text-align: center;
+  margin-top: 20px;
+}
 
+.swiper-button-next,
+.swiper-button-prev {
+  display: none;
+}
 
+/* =====================
+   TOGGLE BUTTON
+===================== */
+.brands__toggle {
+  font-family: Roboto, sans-serif;
+  font-size: 1rem;
+  background: rgb(248, 245, 245);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 10px auto;
 
+  &-icon {
+    width: 16px;
+    transition: transform 0.3s ease;
+  }
+}
 
+/* =====================
+   DESKTOP (Swiper OFF)
+===================== */
+@media (min-width: 768px) {
+  .swiper-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-height: 176px;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+  }
 
+  /* EXPANDED STATE */
+  .brands__slider.expanded {
+    .swiper-wrapper {
+      max-height: 1000px;
+    }
+  }
 
+  .swiper-slide {
+    width: auto !important;
+  }
 
+  .swiper-pagination {
+    display: none;
+  }
 
+  .brands__toggle {
+    display: flex;
+    margin-left: 50px;
+  }
+}
 
+/* =====================
+   LARGE SCREENS
+===================== */
+@media (min-width: 1120px) {
+  .swiper-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
 
+  .brands__toggle-icon {
+    width: 30px;
+    height: 30px;
+  }
+}
