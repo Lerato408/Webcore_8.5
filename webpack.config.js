@@ -2,7 +2,6 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
-const { type } = require('os')
 
 module.exports = {
   // Entry file
@@ -24,23 +23,14 @@ module.exports = {
       // Transpile js with babel
       {
         test: /\.js$/,
-        exclude: /node_modules/, // Do not process files in node_modules
+        include: path.resolve(__dirname, 'src/js'),
+        exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
           options: {
             presets: ['@babel/preset-env']
           }
         }
-      },
-
-      {
-        test: /\.css$/i,
-        use: [
-          process.env.NODE_ENV === 'production'
-            ? MiniCssExtractPlugin.loader
-            : 'style-loader',
-          'css-loader'
-        ]
       },
 
       // Compile SCSS to CSS
