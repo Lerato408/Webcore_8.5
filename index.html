@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Web-core final</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   <script defer="defer" src="/Webcore_8.5/js/bundle.js"></script><link href="/Webcore_8.5/style.css" rel="stylesheet"></head>
   <body class="app__container">
-      <div class="layout">
+    <div class="layout">
         <aside class="aside">
           <header class="aside-header">
             <div class="aside-header__content">
@@ -67,128 +69,222 @@
             </div>
           </footer>
         </aside>
-        <main class="main-page">
-          <header class="main-page__header header">
-            <div class="header__content">
-              <div class="header__group header__group--left">
-                <button class="header__menu-btn" type="button">
-                 <img src="assets/icons/MenuIcon.svg" alt="menu">
-                </button>
-                <span class="header__divider">
-                  <img src="assets/img/HeaderDivider.svg" class="header__divider-img" alt="divider">
-                </span>
-                <div class="header__logo">
-                  <img src="assets/img/LogoGroup.svg" alt="CPS Service Center Sign" class="header__logo--img">
-                </div>
-              </div>
-              <div class="header__group header__group--right">
-                <div class="header__actions-left">
-                  <img src="assets/icons/ChatIcon.svg" class="header__icon-img" alt="chat">
-                  <img src="assets/icons/ProfileIcon.svg" class="header__icon-img" alt="profile">
-                  <img src="assets/icons/CallIcon.svg" class="header__icon-img" alt="call">
-                </div>
-                <span class="header__divider">
-                  <img src="assets/img/HeaderDivider.svg" class="header__divider-img" alt="divider">
-                </span>
-                <div class="header__actions-right">
-                  <img src="assets/icons/RepairIcon.svg" class="header__icon-img" alt="repair">
-                  <img src="assets/icons/StatusIcon.svg" class="header__icon-img" alt="status">
-                </div>
-              </div>
-            </div>
-          </header>
-          <div class="main-page__content content">
-            <section class="content__info">
-              <div class="content__title-group">
-                <div class="content__title-wrapper">
-                  <span class="content__title-border-left"></span>
-                  <span class="content__title">Services and Support</span>
-                </div>
-                <div class="content__action-icons">
-                  <div class="content__action">Submit a request<img src="assets/icons/RepairIcon.svg" alt="repair icon" class="header__icon--img"></div>
-                  <div class="content__action">Repair status<img src="assets/icons/StatusIcon.svg" alt="repair icon" class="header__icon--img"></div>
-                </div>
-              </div>
-              <nav class="content__nav">
-                <ul class="content__slider-track inline-snaps">
-                  <li>
-                    <button class="content__slider-item selected" type="button">
-                      Devices We Repair
-                    </button>
-                  </li>
-                  <li>
-                    <button class="content__slider-item" type="button">
-                      Brands We Repair
-                    </button>
-                  </li>
-                  <li>
-                    <button class="content__slider-item" type="button">
-                      Other Services
-                    </button>
-                  </li>
-                  <li>
-                    <button class="content__slider-item" type="button">
-                      Accessories
-                    </button>
-                  </li>
-                  <li>
-                    <button class="content__slider-item" type="button">
-                      Book a Repair
-                    </button>
-                  </li>
-                  <li>
-                    <button class="content__slider-item" type="button">
-                      Addresses of service centers
-                    </button>
-                  </li>
-                  <li>
-                    <button class="content__slider-item" type="button">
-                      Special prices
-                    </button>
-                  </li>
-                  <li>
-                    <button class="content__slider-item" type="button">
-                      Reviews
-                    </button>
-                  </li>
-                </ul>
-              </nav>
-            </section>
-            <div class="content__columns">
-              <div class="content__text-wrapper">
-                <div class="content__text-block">
-                  <p class="content__text">
-                    We are an authorized service for Dell equipment repairs.<br>Only
-                    with us can you repair your Dell laptop with the official
-                    manufacturer's warranty.
-                  </p>
-                  <p class="content__more-text">
-                    We have been successfully operating since 1992 and have earned a
-                    reputation as a reliable partner,
-                  </p>
-                  <p class="content__more-text--extra">
-                    as evidenced by our large number of loyal customers. We take
-                    pride in the fact that clients come to us through
-                    recommendations and, in turn, recommend us to their family and
-                    friends.
-                  </p>
-                  <button class="content__read-more" id="readMoreBtn" type="button">
-                    <img src="assets/icons/ExpandIcon.svg" alt="expand icon" class="content__arrow--img">
-                    <span class="label">Read more</span>
+        <main class="main-layout">
+          <section class="main-page">
+            
+            <header class="main-page__header header">
+              <div class="header__content">
+                <div class="header__group header__group--left">
+                  <button class="header__menu-btn" type="button">
+                  <img src="assets/icons/MenuIcon.svg" alt="menu">
                   </button>
+                  <span class="header__divider">
+                    <img src="assets/img/HeaderDivider.svg" class="header__divider-img" alt="divider">
+                  </span>
+                  <div class="header__logo">
+                    <img src="assets/img/LogoGroup.svg" alt="CPS Service Center Sign" class="header__logo--img">
+                  </div>
+                </div>
+                <div class="header__group header__group--right">
+                  <div class="header__actions-left">
+                    <img src="assets/icons/ChatIcon.svg" class="header__icon-img" alt="chat">
+                    <img src="assets/icons/ProfileIcon.svg" class="header__icon-img" alt="profile">
+                    <img src="assets/icons/CallIcon.svg" class="header__icon-img" alt="call">
+                  </div>
+                  <span class="header__divider">
+                    <img src="assets/img/HeaderDivider.svg" class="header__divider-img" alt="divider">
+                  </span>
+                  <div class="header__actions-right">
+                    <img src="assets/icons/RepairIcon.svg" class="header__icon-img" alt="repair">
+                    <img src="assets/icons/StatusIcon.svg" class="header__icon-img" alt="status">
+                  </div>
                 </div>
               </div>
-              <div class="content__image-wrapper">
-                <section class="content__image-block">
-                  <figure class="content__image">
-                    <img src="assets/img/PictureContainer.svg" alt="Main image" class="content__image">
-                  </figure>
-                </section>
+            </header>
+            <div class="main-page__content content">
+              <section class="content__info">
+                <div class="content__title-group">
+                  <div class="content__title-wrapper">
+                    <span class="content__title-border-left"></span>
+                    <span class="content__title">Services and Support</span>
+                  </div>
+                  <div class="content__action-icons">
+                    <div class="content__action">Submit a request<img src="assets/icons/RepairIcon.svg" alt="repair icon" class="header__icon--img"></div>
+                    <div class="content__action">Repair status<img src="assets/icons/StatusIcon.svg" alt="repair icon" class="header__icon--img"></div>
+                  </div>
+                </div>
+                <nav class="content__nav">
+                  <ul class="content__slider-track inline-snaps">
+                    <li>
+                      <button class="content__slider-item selected" type="button">
+                        Devices We Repair
+                      </button>
+                    </li>
+                    <li>
+                      <button class="content__slider-item" type="button">
+                        Brands We Repair
+                      </button>
+                    </li>
+                    <li>
+                      <button class="content__slider-item" type="button">
+                        Other Services
+                      </button>
+                    </li>
+                    <li>
+                      <button class="content__slider-item" type="button">
+                        Accessories
+                      </button>
+                    </li>
+                    <li>
+                      <button class="content__slider-item" type="button">
+                        Book a Repair
+                      </button>
+                    </li>
+                    <li>
+                      <button class="content__slider-item" type="button">
+                        Addresses of service centers
+                      </button>
+                    </li>
+                    <li>
+                      <button class="content__slider-item" type="button">
+                        Special prices
+                      </button>
+                    </li>
+                    <li>
+                      <button class="content__slider-item" type="button">
+                        Reviews
+                      </button>
+                    </li>
+                  </ul>
+                </nav>
+              </section>
+              <div class="content__columns">
+                <div class="content__text-wrapper">
+                  <div class="content__text-block">
+                    <p class="content__text">
+                      We are an authorized service for Dell equipment repairs.<br>Only
+                      with us can you repair your Dell laptop with the official
+                      manufacturer's warranty.
+                    </p>
+                    <p class="content__more-text">
+                      We have been successfully operating since 1992 and have earned a
+                      reputation as a reliable partner,
+                    </p>
+                    <p class="content__more-text--extra">
+                      as evidenced by our large number of loyal customers. We take
+                      pride in the fact that clients come to us through
+                      recommendations and, in turn, recommend us to their family and
+                      friends.
+                    </p>
+                    <button class="content__read-more" id="readMoreBtn" type="button">
+                      <img src="assets/icons/ExpandIcon.svg" alt="expand icon" class="content__arrow--img">
+                      <span class="label">Read more</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="content__image-wrapper">
+                  <section class="content__image-block">
+                    <figure class="content__image">
+                      <img src="assets/img/PictureContainer.svg" alt="Main image" class="content__image">
+                    </figure>
+                  </section>
+                </div>
               </div>
             </div>
-          </div>
+          </section>
+          <section class="brand-swiper swiper">
+           <header class="brand-swiper__header">REPAIR EQUIPMENT FROM VARIOUS BRANDS</header> 
+            <div class="brand-swiper__wrapper swiper-wrapper">
+              <div class="brand-swiper__slide swiper-slide"> 
+                <span class="brand-name Lenovo">
+                    <img src="assets/Logos/Lenovo.svg" alt="Lenovo Logo" class="brand-logo">
+                    <button class="arrow-btn">
+                        <img src="assets/icons/GoIcon.svg" alt="arrow right" class="arrow-right">
+                    </button>
+                </span>
+              </div>
+              <div class="brand-swiper__slide swiper-slide"> 
+                <span class="brand-name Bosch">
+                  <img src="assets/Logos/Bosch.svg" alt="Bosch Logo" class="brand-logo">
+                  <button class="arrow-btn">
+                      <img src="assets/icons/GoIcon.svg" alt="arrow right" class="arrow-right">
+                  </button>
+                </span>
+              </div>
+              <div class="brand-swiper__slide swiper-slide"> 
+                <span class="brand-name Samsung">
+                  <img src="assets/Logos/Samsung.svg" alt="Samsung Logo" class="brand-logo">
+                  <button class="arrow-btn">
+                      <img src="assets/icons/GoIcon.svg" alt="arrow right" class="arrow-right">
+                  </button>
+                </span>
+              </div>
+              <div class="brand-swiper__slide swiper-slide"> 
+                <span class="brand-name Lenovo">
+                  <img src="assets/Logos/Lenovo.svg" alt="Lenovo Logo" class="brand-logo">
+                  <button class="arrow-btn">
+                      <img src="assets/icons/GoIcon.svg" alt="arrow right" class="arrow-right">
+                  </button>
+                </span>
+              </div>
+              <div class="brand-swiper__slide swiper-slide">
+                <span class="brand-name hp">
+                  <img src="assets/Logos/hp.svg" alt="Hp Logo" class="brand-logo">
+                  <button class="arrow-btn">
+                      <img src="assets/icons/GoIcon.svg" alt="arrow right" class="arrow-right">
+                  </button>
+                </span>
+              </div>
+              <div class="brand-swiper__slide swiper-slide">
+                <span class="brand-name Samsung">
+                  <img src="assets/Logos/Samsung.svg" alt="Samsung Logo" class="brand-logo">
+                  <button class="arrow-btn">
+                    <img src="assets/icons/GoIcon.svg" alt="arrow right" class="arrow-right"> 
+                  </button>
+                </span>
+              </div>
+              <div class="brand-swiper__slide swiper-slide"> 
+                <span class="brand-name Apple">
+                  <img src="assets/Logos/Apple.svg" alt="Apple Logo" class="brand-logo">
+                  <button class="arrow-btn">
+                      <img src="assets/icons/GoIcon.svg" alt="arrow right" class="arrow-right">
+                  </button>
+                </span>
+              </div>
+              <div class="brand-swiper__slide swiper-slide"> 
+                <span class="brand-name acer">
+                  <img src="assets/Logos/acer.svg" alt="acer Logo" class="brand-logo">
+                  <button class="arrow-btn">
+                      <img src="assets/icons/GoIcon.svg" alt="arrow right" class="arrow-right">
+                  </button>
+                </span>
+              </div>
+              <div class="brand-swiper__slide swiper-slide"> 
+                <span class="brand-name ViewSonic">
+                  <img src="assets/Logos/ViewSonic.svg" alt="ViewSonic Logo" class="brand-logo">
+                  <button class="arrow-btn">
+                      <img src="assets/icons/GoIcon.svg" alt="arrow right" class="arrow-right">
+                  </button>
+                </span>
+              </div>
+              <div class="brand-swiper__slide swiper-slide"> 
+                <span class="brand-name acer">
+                  <img src="assets/Logos/acer.svg" alt="acer Logo" class="brand-logo">
+                  <button class="arrow-btn">
+                      <img src="assets/icons/GoIcon.svg" alt="arrow right" class="arrow-right">
+                  </button>
+                </span>
+              </div>  
+            </div>
+            <div class="swiper-pagination"></div>
+          </section>
+          <button class="container-toggle">
+            <img src="assets/icons/ExpandIcon.svg" alt="expand icon" class="content__arrow--img">
+            <span class="label">Show all</span>
+          </button>
         </main>
-      </div>
+    </div>
+    <script src="js/Swiper.js"></script>
   </body>
 </html>
 
