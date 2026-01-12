@@ -1,4 +1,8 @@
 @import 'variables';
+@import 'aside';
+@import 'main-page';
+@import 'Swiper';
+
 
 * {
   font-family: 'TTLakes', sans-serif;
@@ -74,9 +78,6 @@ body {
   min-width: 0;
 }
 
-@import 'aside';
-@import 'main-page';
-/*swiper*/
-@import 'variables';
+
 
 
