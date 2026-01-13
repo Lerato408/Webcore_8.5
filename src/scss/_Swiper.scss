@@ -12,16 +12,17 @@ body {
 
 
 .brand-swiper {
- outline: red solid 2px;
+ 
  position: relative;
  width: 100%;
- height: 60%;
+ height: 288px;
  background-color:lightgrey;
  box-sizing: border-box;
  background: rgb(246, 244, 244); 
 
   &__header {
      font-family:'TTLakes', sans-serif;
+     font-size: 20px;
      display: flex;
      background: linear-gradient(to right,rgb(246, 244, 244) 40%,white 60%);
      color: #868484;
@@ -46,7 +47,7 @@ body {
 
   &__slide {
      width:240px;
-     height: 74px;
+     height: 72px;
      text-align: center;
      font-size: 15px;
      background: white;
@@ -79,6 +80,7 @@ body {
 }
 
 .brand-name {
+ font-family: 'TTLakes', sans-serif;
  width:240px;
  height: 70px;
  text-align: center;
@@ -92,5 +94,84 @@ body {
 .swiper-button-next,
 .swiper-button-prev {
  display: none;
+}
+
+.container-toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+
+
+.repair-swiper {
+  position: relative;
+  width: 100%;
+  height: 288px;
+  background-color:lightgrey;
+  box-sizing: border-box;
+  background: rgb(246, 244, 244);
+  
+    &__header {
+     font-family:'TTLakes', sans-serif;
+     font-size: 20px;
+     display: flex;
+     background: linear-gradient(to right,rgb(246, 244, 244) 40%,white 60%);
+     color: #868484;
+     padding-top: 30px;
+     padding-left: 10px;;
+     min-height: 70px;
+     border-top: #85fffb 1px solid;
+     margin-bottom: 10px; 
+    }
+    &__wrapper {
+     box-sizing: initial;
+     display: flex;
+     height: 100%;
+     position: relative;
+     transition-property: transform;
+     transition-timing-function: var(--swiper-wrapper-transition-timing-function, initial);
+     width: 95%;
+     z-index: 1;
+     padding:20px;
+    }
+   &__slide  {
+     width:260px;
+     height: 160px;
+     text-align: center;
+     font-size: 15px;
+     background: white;
+     display: flex;
+     justify-content: center;
+     align-items: center; 
+     border: 2px solid lightgrey;
+     border-radius: 5px;
+    }
+}
+
+.repair-name {
+ font-family: 'TTLakes', sans-serif;
+ width:240px;
+ height: 70px;
+ text-align: center;
+ font-size: 20px;
+ background: white;
+ display: flex;
+ align-items: center;
+ padding: 10px;
+}
+
+.container-toggle-repair {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
 }
 
