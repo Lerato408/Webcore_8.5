@@ -262,6 +262,29 @@
   }
 }
 
+.app-footer{
+    display: column;
+    position: sticky;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+
+  &__block1{
+   display: column;
+   align-items: center; 
+  }
+
+  &__block2{
+   display: column;
+   align-items: center; 
+  }
+
+  &__block3{
+    display: column;
+    align-items: center; 
+  }
+}
+
 .inline-snaps {
   scroll-snap-type: x mandatory;
   overflow: auto;
