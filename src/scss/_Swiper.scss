@@ -60,7 +60,7 @@ body {
 }
 
 .swiper-pagination {
- position: sticky;
+ position: absolute;
  text-align: center;
  transform: translateZ(0);
  transition: opacity .3s;
@@ -177,7 +177,7 @@ body {
  transform: translateY(-50%);
 }
 
-.container-toggle-repair {
+.container-toggle {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -213,6 +213,13 @@ body {
     list-style: none;
     }
 
+    &__text{
+    font-family: 'TTLakes', sans-serif;
+    font-size: 15px;
+    color: #333;
+    margin: 10px;
+    }
+
 }
 
 .service-swiper{
@@ -237,15 +244,18 @@ body {
 
   &__slide  {
      width:240px;
-     height: 160px;
+     height: 200px;
      text-align: flex-start;
      font-size: 15px;
      background: white;
      display: flex;
-     justify-content: left;
-     align-items: center; 
+     justify-content: space-between;
+     align-items: flex-start; 
      border: 2px solid lightgrey;
      border-radius: 5px;
+     flex-direction: column;
+     padding-left: 10px;
+     flex-wrap: wrap;
     }
 }
 
@@ -270,6 +280,14 @@ body {
     font-weight: 400;
     font-size: 14px;
     color: #333;
+    }
+
+    &__text{
+    display:flex;
+    flex-direction: row;
+    font-family: 'TTLakes', sans-serif;
+    margin-left: 10px;
+    
     }
 }
 
@@ -306,6 +324,11 @@ body {
     }
 }
 
+.order-container {
+ background: none;
+ border: none;
+}
+
 .order-btn {
   font-family: 'TTLakes', sans-serif;
   font-size: 10px;
@@ -315,7 +338,7 @@ body {
   border-radius: 20px;
   padding: 0;
   cursor: pointer;
-  margin-top: 10px;
+  margin-top: 150px;
 
 
   &:hover {
@@ -323,14 +346,65 @@ body {
   }
 }
 
-.swiper-pagination {
- position: sticky;
- text-align: center;
- transform: translateZ(0);
- transition: opacity .3s;
- z-index: 10;
- margin-top: 20px;
+.more-container {
+ background: none;
+ border:none;
+ font-family: 'TTLakes', sans-serif;
+ cursor: pointer;
+ background-color: white;
+ display: flex;
+ margin-left: 10px;
 }
+
+.more-btn {
+ font-family: 'TTLakes', sans-serif;
+ font-weight: bold;
+ font-size: 18px;
+ color:black;
+ background-color: white;
+ border: none;
+ cursor: pointer;
+ margin-top: 20px;
+
+ &:hover {
+   text-decoration: underline;
+ }
+}
+
+.more-container img{
+    width: 20px;
+    height: 20px;
+    position:absolute;
+    align-items: center;
+}
+
+@media (min-width: 760px){
+    .brand-swiper{
+     grid-template-columns: repeat(4, 1fr);
+     transition: max-height 0.4s ease; 
+     overflow: hidden;
+    }
+
+    .container-toggle {
+     display: block;
+     margin: 10px auto;
+     margin-left: 50px;
+
+    }
+
+    .swiper-pagination{
+     display: none;
+    }
+
+    .service-swiper{
+     flex-direction: row;
+     overflow: hidden;
+    }
+}
+
+
+
+
 
 
 
