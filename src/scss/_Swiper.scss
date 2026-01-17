@@ -402,6 +402,34 @@ body {
     }
 }
 
+@media (min-width: 1024px){
+    .service-swiper__slide{
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     height: 60px;
+    }
+
+    .service-swiper__wrapper{
+     flex-direction: column;
+     align-items: center;
+    }
+
+    .service-container__header, 
+    .time-container__header, 
+    .Price-container__header{
+     display: none;
+    }
+
+    .service-swiper{
+     height:auto;
+    }
+
+    .order-btn{
+     margin-top: 10px;
+    }
+}
+
 
 
 

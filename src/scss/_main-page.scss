@@ -15,6 +15,32 @@
   &__content {
     width: 100%;
   }
+
+  &__footer {
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: 20px 0;
+    border-top: 1px solid #D9FFF5;
+
+    & .footer__content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    & .footer__text {
+      font-family: 'TTLakes', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      color: #7E7E82;
+      margin: 0;
+    }
+  }
 }
 
 .header {
@@ -262,28 +288,6 @@
   }
 }
 
-.app-footer{
-    display: column;
-    position: sticky;
-    bottom: 20px;
-    left: 20px;
-    right: 20px;
-
-  &__block1{
-   display: column;
-   align-items: center; 
-  }
-
-  &__block2{
-   display: column;
-   align-items: center; 
-  }
-
-  &__block3{
-    display: column;
-    align-items: center; 
-  }
-}
 
 .inline-snaps {
   scroll-snap-type: x mandatory;
@@ -348,6 +352,11 @@
 
   .content__title-group {
     justify-content: space-between;
+  }
+
+  .main-page__footer .footer__content {
+    flex-direction: row;
+    align-items: center;
   }
 }
 
