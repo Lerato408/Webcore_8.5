@@ -291,11 +291,12 @@ body {
     }
 }
 
-.service-price__header{
+.service-list__header{
     font-family:'TTLakes', sans-serif;
     font-size: 16px;
     font-weight: normal;
     color: #9b9a9a;
+    background: rgb(246, 244, 244);
 }
 
 .Price-container{
@@ -457,7 +458,7 @@ body {
      height: 60px;
     }
 
-   .service-price__header,
+   .service-list__header,
    .service-swiper__slide {
      display: grid;
      grid-template-columns: 3fr 1fr 1fr 120px; 
