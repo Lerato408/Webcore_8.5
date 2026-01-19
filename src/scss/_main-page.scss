@@ -283,7 +283,7 @@
 
   &__image {
     object-fit: cover;
-    height: 270px;
+    height: 100%;
     margin-top: 0px;
   }
 }
@@ -305,6 +305,12 @@
   .header__actions-left {
     display: none;
   }
+
+   .content__image {
+     object-fit: cover;
+     height: 160px;
+     margin-top: 0px;
+   }
 }
 
 @media (min-width: 320px) {
