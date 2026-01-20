@@ -1,8 +1,11 @@
-let brandSwiper = null
+ console.log('Swiper.js loaded');
+
+ let brandSwiper = null
+
 
 function enableBrandSwiper() {
   brandSwiper = new Swiper('.brand-swiper', {
-    slidesPerView: 1.5,
+    slidesPerView: 1.3,
     spaceBetween: 30,
     pagination: {
       el: '.swiper-pagination',
@@ -34,29 +37,33 @@ window.addEventListener('load', checkBrandWidth)
 
 window.addEventListener('resize', checkBrandWidth)
 
-const btnBrand = document.querySelector('.container-toggle')
-const labelBrand = btnBrand.querySelector('.label')
-const arrowBrand = btnBrand.querySelector('.content__arrow--img')
+document.addEventListener('DOMContentLoaded', () => {
+const btnBrand = document.querySelector('.brand-toggle')
 const listBrand = document.querySelector('.brand-swiper__wrapper')
 
+if(!btnBrand && btnBrand) {
+const labelBrand = btnBrand.querySelector('.label')
+const arrowBrand = btnBrand.querySelector('.content__arrow--img')
+}
 if (btnBrand && listBrand) {
   btnBrand.addEventListener('click', () => {
     listBrand.classList.toggle('expanded')
     if (listBrand.classList.contains('expanded')) {
-      labelBrand.textContent = 'hide'
+      labelBrand.textContent = 'show all'
       arrowBrand.classList.add('rotated')
     } else {
-      labelBrand.textContent = 'show all'
+      labelBrand.textContent = 'hide'
       arrowBrand.classList.remove('rotated')
     }
   })
 }
+})
 
 let repairSwiper = null
 
 function enableRepairSwiper() {
   repairSwiper = new Swiper('.repair-swiper', {
-    slidesPerView: 1.5,
+    slidesPerView: 1.3,
     spaceBetween: 30,
     pagination: {
       el: '.swiper-pagination',
@@ -88,23 +95,29 @@ window.addEventListener('load', checkRepairWidth)
 
 window.addEventListener('resize', checkRepairWidth)
 
-const btnRepair = document.querySelector('.container-toggle')
+document.addEventListener('DOMContentLoaded', () => {
+const btnRepair = document.querySelector('.repair-toggle')
+const listRepair = document.querySelector('.repair-swiper__wrapper')
+
+if(!btnRepair && btnRepair) {
 const labelRepair = btnRepair.querySelector('.label')
 const arrowRepair = btnRepair.querySelector('.content__arrow--img')
-const listRepair = document.querySelector('.repair-swiper__wrapper')
+}
+
 
 if (btnRepair && listRepair) {
   btnRepair.addEventListener('click', () => {
     listRepair.classList.toggle('expanded')
     if (listRepair.classList.contains('expanded')) {
-      labelRepair.textContent = 'hide'
+      labelRepair.textContent = 'show all'
       arrowRepair.classList.add('rotated')
     } else {
-      labelRepair.textContent = 'show all'
+      labelRepair.textContent = 'hide'
       arrowRepair.classList.remove('rotated')
     }
   })
 }
+})
 
 let serviceSwiper = null
 
@@ -112,6 +125,10 @@ function enableServiceSwiper() {
   serviceSwiper = new Swiper('.service-swiper', {
     slidesPerView: 1.5,
     spaceBetween: 30,
+     pagination: {
+      el: '.swiper-pagination',
+      clickable: true
+    }
   })
 }
 
@@ -119,6 +136,7 @@ function disableServiceSwiper() {
   if (serviceSwiper !== null) {
     serviceSwiper.destroy(true, true)
     serviceSwiper = null
+    
   }
 }
 
@@ -134,14 +152,9 @@ function checkServiceWidth() {
   }
 }
 
-window.addEventListener('load', checkServiceWidth)
+window.addEventListener('load', checkRepairWidth)
+window.addEventListener('resize', checkRepairWidth)
 
-window.addEventListener('resize', checkServiceWidth)
-
-const btnService = document.querySelector('.container-toggle')
-const labelService = btnService.querySelector('.label')
-const arrowService = btnService.querySelector('.content__arrow--img')
-const listService = document.querySelector('.service-swiper__wrapper')
 
 
 
