@@ -38,26 +38,27 @@ window.addEventListener('load', checkBrandWidth)
 window.addEventListener('resize', checkBrandWidth)
 
 document.addEventListener('DOMContentLoaded', () => {
-const btnBrand = document.querySelector('.brand-toggle')
-const listBrand = document.querySelector('.brand-swiper__wrapper')
+ const btnBrand = document.querySelector('.brand-toggle')
+ const listBrand = document.querySelector('.brand-swiper__wrapper')
 
-if(!btnBrand && btnBrand) {
-const labelBrand = btnBrand.querySelector('.label')
-const arrowBrand = btnBrand.querySelector('.content__arrow--img')
-}
-if (btnBrand && listBrand) {
-  btnBrand.addEventListener('click', () => {
-    listBrand.classList.toggle('expanded')
-    if (listBrand.classList.contains('expanded')) {
-      labelBrand.textContent = 'show all'
-      arrowBrand.classList.add('rotated')
-    } else {
-      labelBrand.textContent = 'hide'
-      arrowBrand.classList.remove('rotated')
-    }
-  })
-}
+  if (btnBrand && listBrand) {
+ const labelBrand = btnBrand.querySelector('.label')
+ const arrowBrand = btnBrand.querySelector('.content__arrow--img')
+
+ btnBrand.addEventListener('click', () => {
+      listBrand.classList.toggle('expanded')
+
+      if (listBrand.classList.contains('expanded')) {
+        labelBrand.textContent = 'hide'
+        arrowBrand.classList.add('rotated')
+      } else {
+        labelBrand.textContent = 'show all'
+        arrowBrand.classList.remove('rotated')
+      }
+    })
+  }
 })
+
 
 let repairSwiper = null
 
@@ -96,27 +97,25 @@ window.addEventListener('load', checkRepairWidth)
 window.addEventListener('resize', checkRepairWidth)
 
 document.addEventListener('DOMContentLoaded', () => {
-const btnRepair = document.querySelector('.repair-toggle')
-const listRepair = document.querySelector('.repair-swiper__wrapper')
+ const btnRepair = document.querySelector('.repair-toggle')
+ const listRepair = document.querySelector('.repair-swiper__wrapper')
 
-if(!btnRepair && btnRepair) {
-const labelRepair = btnRepair.querySelector('.label')
-const arrowRepair = btnRepair.querySelector('.content__arrow--img')
-}
+ if (btnRepair && listRepair) {
+ const labelRepair = btnRepair.querySelector('.label')
+ const arrowRepair = btnRepair.querySelector('.content__arrow--img')
 
+ btnRepair.addEventListener('click', () => {
+      listRepair.classList.toggle('expanded')
 
-if (btnRepair && listRepair) {
-  btnRepair.addEventListener('click', () => {
-    listRepair.classList.toggle('expanded')
-    if (listRepair.classList.contains('expanded')) {
-      labelRepair.textContent = 'show all'
-      arrowRepair.classList.add('rotated')
-    } else {
-      labelRepair.textContent = 'hide'
-      arrowRepair.classList.remove('rotated')
-    }
-  })
-}
+      if (listRepair.classList.contains('expanded')) {
+        labelRepair.textContent = 'hide'
+        arrowRepair.classList.add('rotated')
+      } else {
+        labelRepair.textContent = 'show all'
+        arrowRepair.classList.remove('rotated')
+      }
+    })
+  }
 })
 
 let serviceSwiper = null
@@ -152,8 +151,8 @@ function checkServiceWidth() {
   }
 }
 
-window.addEventListener('load', checkRepairWidth)
-window.addEventListener('resize', checkRepairWidth)
+window.addEventListener('load', checkServiceWidth)
+window.addEventListener('resize', checkServiceWidth)
 
 
 
