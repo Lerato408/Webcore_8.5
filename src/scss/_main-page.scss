@@ -297,6 +297,13 @@
   }
 }
 
+.footer__textblock {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+}
+
 @media (max-width: 319px) {
   .content__action-icons {
     display: none;
@@ -358,6 +365,10 @@
 
   .content__title-group {
     justify-content: space-between;
+  }
+
+  .footer__textblock {
+    display: block;
   }
 
   .main-page__footer .footer__content {
