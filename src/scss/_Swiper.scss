@@ -298,7 +298,7 @@ body {
 .expanded{
  display: grid;
  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
- gap: 20px;
+
  position: relative;
  width: 95%;
  height: 100%;
@@ -336,8 +336,8 @@ body {
     font-size: 15px;
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    margin-top: 10px;
+    gap: 5px;
+    margin-top: 5px;
 
     &__header {
     font-family:'TTLakes', sans-serif;
@@ -404,12 +404,51 @@ body {
 
 
 
-@media (min-width:320px){
+@media (min-width:320px) and (max-width:759px){
+   
+    .content__image {
+     object-fit: cover;
+     margin-top: 0px;
+     height: 200px;
+    }
 
    .service-list__header{
      display:none
     }
+    
+    .service-swiper__slide {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 12px;
+  }
 
+  .time-container,
+  .order-container {
+    display: inline-flex;
+    align-items: flex-start;
+  }
+
+  .service-swiper__slide .time-container {
+    grid-column: 1;
+  }
+
+  .service-swiper__slide .order-container {
+    margin-left: auto;
+  }
+
+  .service-swiper__slide {
+    position: relative;
+  }
+
+  .time-container {
+    padding-right: 120px; 
+  }
+
+  .order-container {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+  }
 
 }
 
@@ -465,6 +504,7 @@ body {
      flex-direction: row;
      overflow: hidden;
     }
+
 }
 
 @media (min-width: 1024px){
@@ -502,6 +542,8 @@ body {
      border: 1px solid #ddd;
    }
 
+   
+
     .service-swiper__wrapper{
      flex-direction: column;
      align-items: center;
@@ -514,7 +556,7 @@ body {
 
 
     .repair-swiper__wrapper.expanded{
-        width: 90%;
+        width: 95%;
         height:100%;
     }
 
