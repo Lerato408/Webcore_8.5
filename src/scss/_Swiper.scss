@@ -17,13 +17,13 @@ body {
  width: 100%;
  background-color:lightgrey;
  box-sizing: border-box;
- background: rgb(246, 244, 244); 
+ background: #F8F8F8; 
 
   &__header {
      font-family:'TTLakes', sans-serif;
      font-size: 20px;
      display: flex;
-     background: linear-gradient(to right,rgb(246, 244, 244) 40%,white 60%);
+     background: linear-gradient(to right,#F8F8F8 40%,white 60%);
      color: #868484;
      padding-top: 30px;
      padding-left: 10px;;
@@ -81,7 +81,7 @@ body {
 
 .brand-name {
  font-family: 'TTLakes', sans-serif;
- width:240px;
+ width:235px;
  height: 70px;
  text-align: center;
  font-size: 15px;
@@ -114,13 +114,13 @@ body {
   width: 100%;
   background-color:lightgrey;
   box-sizing: border-box;
-  background: rgb(246, 244, 244);
+  background:#F8F8F8;
   
     &__header {
      font-family:'TTLakes', sans-serif;
      font-size: 20px;
      display: flex;
-     background: linear-gradient(to right,rgb(246, 244, 244) 40%,white 60%);
+     background: linear-gradient(to right,#F8F8F8 40%,white 60%);
      color: #868484;
      padding-top: 30px;
      padding-left: 10px;;
@@ -203,7 +203,7 @@ body {
     font-family:'TTLakes', sans-serif;
      font-size: 20px;
      display: flex;
-     background: linear-gradient(to right,rgb(246, 244, 244) 40%,white 60%);
+     background: linear-gradient(to right,#F8F8F8 40%,white 60%);
      color: #868484;
      padding-top: 30px;
      padding-left: 10px;;
@@ -213,6 +213,7 @@ body {
 
     &__list {
     list-style: none;
+    background-color: #F8F8F8;
     }
 
     &__text{
@@ -230,7 +231,7 @@ body {
   height: 288px;
   background-color:lightgrey;
   box-sizing: border-box;
-  background: rgb(246, 244, 244);
+  background: #F8F8F8;
   
   &__wrapper{
      box-sizing: initial;
@@ -309,7 +310,7 @@ body {
     font-size: 16px;
     font-weight: normal;
     color: #9b9a9a;
-    background: rgb(246, 244, 244);
+    background:#F8F8F8;
 }
 
 .Price-container{
@@ -373,7 +374,6 @@ body {
  border:none;
  font-family: 'TTLakes', sans-serif;
  cursor: pointer;
- background-color: white;
  display: flex;
  margin-left: 10px;
 }
@@ -383,8 +383,8 @@ body {
  font-weight: bold;
  font-size: 18px;
  color:black;
- background-color: white;
  border: none;
+ background: none;
  cursor: pointer;
  margin-top: 20px;
 
@@ -528,7 +528,7 @@ body {
      padding: 16px 24px;
      align-content: center;
      justify-content: center;
-     padding-bottom: 0px;
+     
    }
 
    .service-swiper__slide {
